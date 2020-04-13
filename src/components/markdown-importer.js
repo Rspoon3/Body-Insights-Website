@@ -1,15 +1,13 @@
 import React, { Component } from "react"
 import ReactMarkdown from "react-markdown"
 
-import source from "./privacy.md"
-
-class WhatsNew extends Component {
+class Markdown extends Component {
   state = {
     post: null,
   }
-
+  
   componentDidMount() {
-    fetch(source)
+    fetch(this.props.source)
       .then(res => res.text())
       .then(post => this.setState(state => ({ ...state, post })))
       .catch(err => console.error(err))
@@ -21,4 +19,4 @@ class WhatsNew extends Component {
   }
 }
 
-export default WhatsNew
+export default Markdown

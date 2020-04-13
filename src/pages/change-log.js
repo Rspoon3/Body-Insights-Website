@@ -1,19 +1,15 @@
-import React from "react"
-import { graphql } from "gatsby"
-
+import React, { Component } from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-
-import "@fortawesome/fontawesome-free/css/all.min.css"
-
 import configs from "../../site-config"
-
 import Footer from "../components/footer"
 import Header from "../components/header"
+import changelog from "../markdown/privacy.md"
+import Markdown from "../components/markdown-importer"
 
 const IndexPage = ({ data }) => (
     <Layout>
-        <SEO title="Dark Noise" keywords={configs.app_keywords} />
+        <SEO title={configs.app_name} keywords={configs.app_keywords} />
 
         <div
             className="imageWrapper"
@@ -25,11 +21,13 @@ const IndexPage = ({ data }) => (
                 borderRadius: "0"
             }}
         >
-            <div className="headerBackground">
+            <div className="headerBackground" >
                 <div className="container presskitPage">
-                    <Header data={data}/>
-                    
-                    <Footer/>
+                    <Header data={data} />
+                    <div className="markdown">
+                    <Markdown source = {changelog}/>
+                    </div>
+                    <Footer />
                 </div>
             </div>
         </div>
@@ -46,80 +44,10 @@ export const query = graphql`
           ...GatsbyImageSharpFluid
         }
       }
-    }
-    appStore: file(relativePath: { eq: "appstore.png" }) {
-      childImageSharp {
-        fixed(width: 220) {
-          ...GatsbyImageSharpFixed
-        }
-      }
-    }
-    playStore: file(relativePath: { eq: "playstore.png" }) {
-      childImageSharp {
-        fixed(height: 75) {
-          ...GatsbyImageSharpFixed
-        }
-      }
-    }
-    iphoneScreen: file(relativePath: { glob: "screenshot/*.{png,jpg}" }) {
-      childImageSharp {
-        fluid(maxWidth: 350) {
-          ...GatsbyImageSharpFluid
-        }
-      }
-    }
-    videoScreen: file(
-      extension: { ne: "txt" }
-      relativePath: { glob: "videos/*" }
-    ) {
-      publicURL
-      extension
-    }
-    appIconLarge: file(relativePath: { eq: "icon.png" }) {
-      childImageSharp {
-        fluid(maxWidth: 120) {
-          ...GatsbyImageSharpFluid
-        }
-      }
-    }
+    } 
     headerImage: file(relativePath: { eq: "headerimage.png" }) {
       childImageSharp {
         fluid(maxHeight: 714) {
-          ...GatsbyImageSharpFluid
-        }
-      }
-    }
-    iphonePreviewBlack: file(relativePath: { eq: "black.png" }) {
-      childImageSharp {
-        fluid(maxWidth: 400) {
-          ...GatsbyImageSharpFluid
-        }
-      }
-    }
-    iphonePreviewBlue: file(relativePath: { eq: "blue.png" }) {
-      childImageSharp {
-        fluid(maxWidth: 400) {
-          ...GatsbyImageSharpFluid
-        }
-      }
-    }
-    iphonePreviewCoral: file(relativePath: { eq: "coral.png" }) {
-      childImageSharp {
-        fluid(maxWidth: 400) {
-          ...GatsbyImageSharpFluid
-        }
-      }
-    }
-    iphonePreviewWhite: file(relativePath: { eq: "white.png" }) {
-      childImageSharp {
-        fluid(maxWidth: 400) {
-          ...GatsbyImageSharpFluid
-        }
-      }
-    }
-    iphonePreviewYellow: file(relativePath: { eq: "yellow.png" }) {
-      childImageSharp {
-        fluid(maxWidth: 400) {
           ...GatsbyImageSharpFluid
         }
       }

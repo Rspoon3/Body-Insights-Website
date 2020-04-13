@@ -533,7 +533,7 @@ export default createGlobalStyle`
     display: none;
   }
 
-  .privacyPolicy {
+  .markdown {
     grid-area: p; 
     color: white
     line-height: normal;
@@ -541,17 +541,17 @@ export default createGlobalStyle`
     margin: auto;   
   }
 
-  .privacyPolicy h1 {
+  .markdown h1 {
     margin-top: 40px;
     margin-bottom:30px;
   }
 
-  .privacyPolicy p {
+  .markdown p {
     margin-top: 10px;
     margin-bottom:30px;
   }
 
-  .privacyPolicy ul {
+  .markdown ul {
     margin-top: 10px;
     margin-bottom:30px;
     margin-left: 30px
