@@ -11,8 +11,8 @@ import configs from "../../site-config"
 import Footer from "../components/footer"
 
 
-import aboutMe from "../markdown/privacy.md"
-import appDescription from "../markdown/privacy.md"
+import aboutMe from "../markdown/about-me.md"
+import appDescription from "../markdown/description.md"
 import Markdown from "../components/markdown-importer"
 
 const IndexPage = ({ data }) => (
@@ -36,13 +36,28 @@ const IndexPage = ({ data }) => (
             <h2>Press Kit</h2>
             <p>Download full Press Kit with screenshots, promo art, and hi-res icon <a href={configs.presskit_download_link}>here</a>.</p>
             <div className="presskit-hero">
-              <a href="/banners/dark-noise-hero-transparent.png">
-                <img src="/banners/dark-noise-hero-transparent.png" />
+              <a href="/screenshots/app-store/phone_banner.png">
+                <img src="/screenshots/app-store/phone_banner.png" />
               </a>
             </div>
             <Markdown source={appDescription} />
             <h2>Promo Images</h2>
+            <div className="presskit-banner">
+              <a href="/screenshots/app-store/dark_logo_banner.png">
+                <img src="/screenshots/app-store/dark_logo_banner.png" />
+              </a>
+            </div>
+            <div className="presskit-banner">
+              <a href="/screenshots/app-store/light_logo_banner.png">
+                <img src="/screenshots/app-store/light_logo_banner.png" />
+              </a>
+            </div>
             <div className="presskit-iphone-screenshots">
+              <div className="presskit-screenshot">
+                  <a href="/screenshots/app-store/screenshot_iphone_01.png">
+                    <img src="/screenshots/app-store/screenshot_iphone_01.png" />
+                  </a>
+              </div>
               <div className="presskit-screenshot">
                   <a href="/screenshots/app-store/screenshot_iphone_02.png">
                     <img src="/screenshots/app-store/screenshot_iphone_02.png" />
@@ -53,26 +68,21 @@ const IndexPage = ({ data }) => (
                     <img src="/screenshots/app-store/screenshot_iphone_03.png" />
                   </a>
               </div>
+            </div>
+            <div className="presskit-iphone-screenshots">
               <div className="presskit-screenshot">
                   <a href="/screenshots/app-store/screenshot_iphone_04.png">
                     <img src="/screenshots/app-store/screenshot_iphone_04.png" />
                   </a>
               </div>
-            </div>
-            <div className="presskit-iphone-screenshots">
               <div className="presskit-screenshot">
                   <a href="/screenshots/app-store/screenshot_iphone_05.png">
                     <img src="/screenshots/app-store/screenshot_iphone_05.png" />
                   </a>
               </div>
               <div className="presskit-screenshot">
-                  <a href="/screenshots/app-store/screenshot_iphone_07.png">
-                    <img src="/screenshots/app-store/screenshot_iphone_07.png" />
-                  </a>
-              </div>
-              <div className="presskit-screenshot">
-                  <a href="/screenshots/app-store/screenshot_iphone_08.png">
-                    <img src="/screenshots/app-store/screenshot_iphone_08.png" />
+                  <a href="/screenshots/app-store/screenshot_iphone_06.png">
+                    <img src="/screenshots/app-store/screenshot_iphone_06.png" />
                   </a>
               </div>
             </div>            

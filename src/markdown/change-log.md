@@ -1,0 +1,28 @@
+# Version 2020.1
+This is the first update to our app. Jeez goodness by kept more sensually a much far proper exotically precise here is a link and and illicit hey uninspiring the more sat honey knelt before before bearish bowed lorikeet wolf grandly instead diligently and rhinoceros imperative.
+
+## Bug Fixes
+- Tab bar now fixed for iOS 13.4.
+
+# Version 2019.1
+Body Insights has been re-made from the ground up! With full iOS 13 support, Body Insights looks gorgeous in both light and dark mode. With a clean and intuitive UI, everything is easy to find and use.
+
+## What’s New
+- Completely redesigned app, while keeping all the features you love.
+
+# Version 1.0
+Body Insights lets you customize your health statistics to your liking while keeping all of your data safe. See bar charts and line graphs along with statistics of the most popular categories supported by Health Kit. Over 60 types are currently supported such as steps, distance, swimming, walking/running, water, and many more!
+
+Here is a brief recap of some supported features:
+
+- Over 60 supported health types
+- Multiple chart types
+- Chart customization
+- Set your own goals
+- Unlock achievements for being active
+- Save personal photos
+- Protect the app with Face ID or Touch ID
+- Export your data to CSV
+- Simple and intuitive UI
+- Fully supports iOS dark mode
+- No app recommendations causing clutter 

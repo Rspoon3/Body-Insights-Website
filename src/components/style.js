@@ -592,7 +592,8 @@ export default createGlobalStyle`
   }
 
   .presskit-banner {
-    margin-bottom: 20px;
+    margin-top: 25px;
+    margin-bottom: 40px;
   }
 
   .presskit-hero {
@@ -619,7 +620,7 @@ export default createGlobalStyle`
     display: flex;
     width: 100%;
     justify-content: space-between;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
   }
 
   .presskit-ipad-screenshots{

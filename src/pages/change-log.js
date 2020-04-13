@@ -4,7 +4,7 @@ import SEO from "../components/seo"
 import configs from "../../site-config"
 import Footer from "../components/footer"
 import Header from "../components/header"
-import changelog from "../markdown/privacy.md"
+import changelog from "../markdown/change-log.md"
 import Markdown from "../components/markdown-importer"
 
 const IndexPage = ({ data }) => (
