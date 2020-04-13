@@ -1,19 +1,23 @@
-import React from "react"
+// import React from "react"
 import { graphql } from "gatsby"
 import Img from "gatsby-image"
 import Link from "gatsby-link"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import PrivacyPolicyText from "../components/privacyPolicyText"
 
 import "@fortawesome/fontawesome-free/css/all.min.css"
 
 import configs from "../../site-config"
 
+
+import React from 'react'
+import Term from "../components/Term"
+
+
 const IndexPage = ({ data }) => (
   <Layout>
-    <SEO title="Dark Noise" keywords={configs.app_keywords} />
+    <SEO title={configs.app_keywords} keywords={configs.app_keywords} />
 
     <div
       className="imageWrapper"
@@ -57,8 +61,8 @@ const IndexPage = ({ data }) => (
             </nav>
           </header>
           <div className="privacyPolicy">
-            <h1>Privacy Policy</h1> 
-            <PrivacyPolicyText/>
+            <Term/>
+            {/* <ReactMarkdown source={input} /> */}
           </div>
           <footer>
             <p className="footerText">
@@ -139,11 +143,13 @@ const IndexPage = ({ data }) => (
   </Layout>
 )
 
+
+
 export default IndexPage
 
 export const query = graphql`
   query {
-    headerIcon: file(relativePath: { eq: "app-icon-dark-noise-512.png" }) {
+    headerIcon: file(relativePath: { eq: "icon.png" }) {
       childImageSharp {
         fluid(maxWidth: 50) {
           ...GatsbyImageSharpFluid
@@ -178,7 +184,7 @@ export const query = graphql`
       publicURL
       extension
     }
-    appIconLarge: file(relativePath: { eq: "app-icon-dark-noise-512.png" }) {
+    appIconLarge: file(relativePath: { eq: "icon.png" }) {
       childImageSharp {
         fluid(maxWidth: 120) {
           ...GatsbyImageSharpFluid

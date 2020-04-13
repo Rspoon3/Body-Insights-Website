@@ -29,7 +29,7 @@ module.exports = {
         background_color: configs.body_background_color,
         theme_color: configs.app_title_color,
         display: `minimal-ui`,
-        icon: `src/images/app-icon-dark-noise-512.png`, // This path is relative to the root of the site.
+        icon: `src/images/icon.png`, // This path is relative to the root of the site.
       },
     },
     {

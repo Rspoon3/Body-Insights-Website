@@ -52,10 +52,6 @@ function SEO({ description, lang, meta, keywords, title }) {
           content: `website`,
         },
         {
-          property: `og:image`,
-          content: `https://darknoise.app/app-icon-dark-noise-512.png`
-        },
-        {
           name: `twitter:card`,
           content: `summary`,
         },

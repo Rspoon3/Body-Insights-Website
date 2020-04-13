@@ -9,59 +9,59 @@ module.exports = {
   path_prefix           : "/",                                          // Prefixes all links. For cases when deployed to example.github.io/automatic-gatsbyjs-app-landing-page/.
   app_name              : "Dark Noise",
   app_price             : null,
-  app_description       : "Simple. Fast. White noise, refined. For iPhone and iPad.",
-  app_keywords          : ["White Noise", "Ambient Noise", "Meditation"],
+  app_description       : "Your health, customized for you.",
+  app_keywords          : ["Health", "Steps", "Pedometer", "Walking", "Body"],
 
   // Personal Info
-  your_name              : "Charlie Chapman",
-  your_link              : "https://charliemchapman.com",
-  your_city              : "St. Louis",
-  email_address          : "dev.charliemchapman@gmail.com",
-  linkedin_username      : null,
+  your_name              : "Ricky Witherspoon ",
+  your_link              : "https://rsw3.xyz",
+  your_city              : "New Hampshire",
+  email_address          : "richardwitherspoon3@gmail.com",
+  linkedin_username      : "Rspoon3",
   facebook_username      : null,
-  instagram_username     : null,
-  twitter_username       : "DarkNoiseApp",
-  github_username        : null,
+  instagram_username     : "Rspoon3",
+  twitter_username       : "Rspoon3",
+  github_username        : "Rspoon3",
   youtube_username       : null,
 
   // Features List
   features               : [
     {
       title: "Simple",
-      description:
-        "A beautiful, clean interface makes it easy to find and play your favorite noises.",
+      description: "A beautiful, clean interface makes it easy to find and understand your health metrics.",
       fontawesome_icon_name: "star",
     },
     {
-      title: "Fast",
-      description:
-        "With widgets, quick actions, and Siri Shortcuts support, you can start up a noise in seconds, in any environment.",
-      fontawesome_icon_name: "bolt",
+      title: "Customizable",
+      description: "See bar charts or line graphs along with statistics of the most popular categories supported by iOS.",
+      fontawesome_icon_name: "cogs",
     },
     {
-      title: "1 Price, All Noises",
-      description:
-        "All noises are included with 1 price, so you'll have access to every noise you see.",
-      fontawesome_icon_name: "dollar-sign",
+      title: "Goal Oriented",
+      description: "Keep track of what's important to you by setting your own goals, and earn achievements by staying active.",
+      fontawesome_icon_name: "award",
     },
   ],
-  header_background             : "rgba(0, 0, 0, 0.1)",
+  header_background             : "rgba(0, 0, 0, 0.2)",
   topbar_title_color            : "#ffffff",
-  cover_overlay_color_rgba      : "rgba(40, 32, 51, 0.9)",
-  device_color                  : "black",                          // Set to "black", "blue", "coral", "white", or "yellow"
-  body_background_color         : "#0a0117",
+  cover_overlay_color_rgba      : "#2d385480",
+  device_color                  : "blue",                          // Set to "black", "blue", "coral", "white", or "yellow"
+  body_background_color         : "#001929",
   primary_text_color            : "#000",
   content_width                 : "1170px",
   font                          : `"Helvetica Neue", sans-serif`,
-  link_color                    : "#ab73ff",
+  link_color                    : "#3587f7",
   app_title_color               : "#ffffff",
   app_price_color               : "#ffffff",
   app_description_color         : "#ffffff",
   feature_title_color           : "#ffffff",
   feature_text_color            : "#999999",
-  feature_icons_foreground_color: "#802bff",
+  feature_icons_foreground_color: "#3587f7",
   feature_icons_background_color: "#f6f6f6",
   social_icons_foreground_color : "#666666",
   social_icons_background_color : "#e6e6e6",
   footer_text_color             : "#888888",
+
+  //7ed0fb light blue hear
+  //3587f7 dark blue heart
 }

@@ -47,6 +47,9 @@ const IndexPage = ({ data }) => (
             </div>
             <nav>
               <ul>
+              <li>
+                  <Link to="/presskit">What's New</Link>
+                </li>
                 <li>
                   <Link to="/presskit">Press Kit</Link>
                 </li>
@@ -267,7 +270,7 @@ export default IndexPage
 
 export const query = graphql`
   query {
-    headerIcon: file(relativePath: { eq: "app-icon-dark-noise-512.png" }) {
+    headerIcon: file(relativePath: { eq: "icon.png" }) {
       childImageSharp {
         fluid(maxWidth: 50) {
           ...GatsbyImageSharpFluid
@@ -302,7 +305,7 @@ export const query = graphql`
       publicURL
       extension
     }
-    appIconLarge: file(relativePath: { eq: "app-icon-dark-noise-512.png" }) {
+    appIconLarge: file(relativePath: { eq: "icon.png" }) {
       childImageSharp {
         fluid(maxWidth: 120) {
           ...GatsbyImageSharpFluid
