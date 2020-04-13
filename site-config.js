@@ -1,13 +1,13 @@
 module.exports = {
   // App Info
-  appstore_link         : "https://apps.apple.com/us/app/dark-noise/id1465439395",                                  // Enter App Store URL.
+  appstore_link         : "https://apps.apple.com/my/app/body-insights/id1397531585",                                  // Enter App Store URL.
   playstore_link        : null,                                         // Enter Google Play Store URL.
   google_analytics_ID   : null,                                         // Enter Google Analytics ID or ""
   presskit_download_link: null,                                         // Enter a link to downloadable file or (e.g. public Dropbox link to a .zip file). 
   video_or_screenshot   : "screenshot",                                 // "screenshot" or "video"
-  app_url               : "https://darknoise.app/",                              // Domain of your website without path_prefix.
+  app_url               : "https://bodyinsights.app/",                              // Domain of your website without path_prefix.
   path_prefix           : "/",                                          // Prefixes all links. For cases when deployed to example.github.io/automatic-gatsbyjs-app-landing-page/.
-  app_name              : "Dark Noise",
+  app_name              : "Body Insights",
   app_price             : null,
   app_description       : "Your health, customized for you.",
   app_keywords          : ["Health", "Steps", "Pedometer", "Walking", "Body"],
