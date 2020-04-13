@@ -1,4 +1,4 @@
-import React, { Fragment, Component } from "react"
+import React, { Component } from "react"
 import ReactMarkdown from "react-markdown"
 
 import source from "./privacy.md"
