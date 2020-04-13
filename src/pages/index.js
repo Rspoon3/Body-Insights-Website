@@ -1,33 +1,28 @@
 import React from "react"
 import { graphql } from "gatsby"
 import Img from "gatsby-image"
-
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-
 import "@fortawesome/fontawesome-free/css/all.min.css"
-
 import configs from "../../site-config"
-
 import Footer from "../components/footer"
 import Header from "../components/header"
 
-
 const IndexPage = ({ data }) => (
   <Layout>
-    <SEO title="Dark Noise" keywords={configs.app_keywords} />
+    <SEO title={configs.app_name} keywords={configs.app_keywords} />
 
     <div
       className="imageWrapper"
       style={{
         backgroundImage: `linear-gradient(${configs.cover_overlay_color_rgba},${
           configs.cover_overlay_color_rgba
-        }),url(${data.headerImage.childImageSharp.fluid.src})`,
+          }),url(${data.headerImage.childImageSharp.fluid.src})`,
       }}
     >
       <div className="headerBackground">
         <div className="container">
-          <Header data ={data}/>
+          <Header data={data} />
           <div
             className="iphonePreview"
             style={{
@@ -35,13 +30,13 @@ const IndexPage = ({ data }) => (
                 configs.device_color === "black"
                   ? data.iphonePreviewBlack.childImageSharp.fluid.src
                   : configs.device_color === "blue"
-                  ? data.iphonePreviewBlue.childImageSharp.fluid.src
-                  : configs.device_color === "coral"
-                  ? data.iphonePreviewCoral.childImageSharp.fluid.src
-                  : configs.device_color === "white"
-                  ? data.iphonePreviewWhite.childImageSharp.fluid.src
-                  : data.iphonePreviewYellow.childImageSharp.fluid.src
-              })`,
+                    ? data.iphonePreviewBlue.childImageSharp.fluid.src
+                    : configs.device_color === "coral"
+                      ? data.iphonePreviewCoral.childImageSharp.fluid.src
+                      : configs.device_color === "white"
+                        ? data.iphonePreviewWhite.childImageSharp.fluid.src
+                        : data.iphonePreviewYellow.childImageSharp.fluid.src
+                })`,
             }}
           >
             <svg
@@ -73,7 +68,7 @@ const IndexPage = ({ data }) => (
                       data.videoScreen.extension === "mov"
                         ? `mp4`
                         : data.videoScreen.extension
-                    }`}
+                      }`}
                   />
                 </video>
               </div>
@@ -109,8 +104,8 @@ const IndexPage = ({ data }) => (
               <h1 className="appName">{configs.app_name}</h1>
               <h2 className="appPrice">{configs.app_price}</h2>
             </div>
-            <div className="appDescriptionContainer">
-              <p className="appDescription">{configs.app_description}</p>
+            <div className="appTaglineContainer">
+              <p className="appTagline">{configs.app_tagline}</p>
             </div>
             <div className="downloadButtonsContainer">
               {configs.playstore_link && (
@@ -129,9 +124,6 @@ const IndexPage = ({ data }) => (
                   />
                 </a>
               )}
-              {!configs.appstore_link && !configs.playstore_link && (
-                <div><p style={{color:"white"}}>Coming soon.</p><br/><p  style={{color:"white"}}>Interested in beta testing? You can join the <a href="https://testflight.apple.com/join/oCSd9hos">TestFlight beta here</a>.  Be sure to follow <a href="https://twitter.com/darknoiseapp">@DarkNoiseApp</a> on Twitter for updates!</p></div>
-              )}
             </div>
           </div>
           <div className="features">
@@ -145,7 +137,7 @@ const IndexPage = ({ data }) => (
                         <i
                           className={`iconTop fas fa-${
                             feature.fontawesome_icon_name
-                          } fa-stack-1x`}
+                            } fa-stack-1x`}
                         />
                       </span>
                     </div>
@@ -159,7 +151,7 @@ const IndexPage = ({ data }) => (
               return null
             })}
           </div>
-          <Footer/>
+          <Footer />
         </div>
       </div>
     </div>

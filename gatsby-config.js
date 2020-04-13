@@ -5,7 +5,7 @@ module.exports = {
   siteMetadata: {
     siteUrl: urljoin(configs.app_url, configs.path_prefix),
     title: configs.app_name,
-    description: configs.app_description,
+    description: configs.app_tagline,
     author: configs.twitter_username,
   },
   plugins: [

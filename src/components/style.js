@@ -249,7 +249,7 @@ export default createGlobalStyle`
     }
   }
 
-  .appDescriptionContainer {
+  .appTaglineContainer {
     font-size: 2.5rem;
     font-weight: normal;
     width: 100%;
@@ -259,12 +259,12 @@ export default createGlobalStyle`
     line-height: 1.5;
   }
 
-  .appDescription {
-    color: ${configs.app_description_color};
+  .appTagline {
+    color: ${configs.app_tagline_color};
   }
 
   @media only screen and (max-width: 992px) {
-    .appDescription {
+    .appTagline {
       text-align: center;
     }
   }
@@ -544,6 +544,7 @@ export default createGlobalStyle`
   .markdown h1 {
     margin-top: 40px;
     margin-bottom:30px;
+    color: ${configs.heading_color};
   }
 
   .markdown p {
@@ -582,7 +583,7 @@ export default createGlobalStyle`
     margin-top: 40px
     margin-bottom: 20px;
     font-size: 3rem;
-    color: #ab73ff;
+    color: ${configs.heading_color};
   }
 
   .presskit-body p{
@@ -629,7 +630,7 @@ export default createGlobalStyle`
   }
   
   .presskit-screenshot{
-    width: 23%;
+    width: 30%;
   }
 
   .presskit-iphone-screenshots img{

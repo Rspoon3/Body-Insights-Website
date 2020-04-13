@@ -17,18 +17,16 @@ const IndexPage = ({ data }) => (
       style={{
         backgroundImage: `linear-gradient(${configs.cover_overlay_color_rgba},${
           configs.cover_overlay_color_rgba
-        }),url(${data.headerImage.childImageSharp.fluid.src})`,
+          }),url(${data.headerImage.childImageSharp.fluid.src})`,
         height: "114px",
         borderRadius: "0"
       }}
     >
       <div className="headerBackground">
         <div className="container privacyPage">
-         <Header data={data}/>
-          <div className="markdown">
-            <Markdown source = {privacy}/>
-          </div>
-          <Footer/>
+          <Header data={data} />
+          <Markdown source={privacy} />
+          <Footer />
         </div>
       </div>
     </div>

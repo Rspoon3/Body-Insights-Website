@@ -5,7 +5,7 @@ class Markdown extends Component {
   state = {
     post: null,
   }
-  
+
   componentDidMount() {
     fetch(this.props.source)
       .then(res => res.text())
@@ -15,7 +15,11 @@ class Markdown extends Component {
 
   render() {
     const { post } = this.state
-    return <ReactMarkdown source={post} />
+    return (
+      <div className="markdown">
+        <ReactMarkdown source={post} />
+      </div>
+    )
   }
 }
 

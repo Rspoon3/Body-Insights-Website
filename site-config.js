@@ -1,15 +1,15 @@
 module.exports = {
   // App Info
-  appstore_link         : "https://apps.apple.com/my/app/body-insights/id1397531585",                                  // Enter App Store URL.
-  playstore_link        : null,                                         // Enter Google Play Store URL.
-  google_analytics_ID   : null,                                         // Enter Google Analytics ID or ""
-  presskit_download_link: null,                                         // Enter a link to downloadable file or (e.g. public Dropbox link to a .zip file). 
+  appstore_link         : "https://apps.apple.com/my/app/body-insights/id1397531585",                                  
+  playstore_link        : null,                                        
+  google_analytics_ID   : null,                                       
+  presskit_download_link: "https://s3.us-east-2.amazonaws.com/media.charliemchapman.com/Dark_Noise_PressKit.zip",                                        
   video_or_screenshot   : "screenshot",                                 // "screenshot" or "video"
   app_url               : "https://bodyinsights.app/",                              // Domain of your website without path_prefix.
   path_prefix           : "/",                                          // Prefixes all links. For cases when deployed to example.github.io/automatic-gatsbyjs-app-landing-page/.
   app_name              : "Body Insights",
   app_price             : null,
-  app_description       : "Your health, customized for you.",
+  app_tagline           : "Your health, customized for you.",
   app_keywords          : ["Health", "Steps", "Pedometer", "Walking", "Body"],
 
   // Personal Info
@@ -50,10 +50,11 @@ module.exports = {
   primary_text_color            : "#000",
   content_width                 : "1170px",
   font                          : `"Helvetica Neue", sans-serif`,
+  heading_color                 : "#3587f7",
   link_color                    : "#3587f7",
   app_title_color               : "#ffffff",
   app_price_color               : "#ffffff",
-  app_description_color         : "#ffffff",
+  app_tagline_color             : "#ffffff",
   feature_title_color           : "#ffffff",
   feature_text_color            : "#999999",
   feature_icons_foreground_color: "#3587f7",

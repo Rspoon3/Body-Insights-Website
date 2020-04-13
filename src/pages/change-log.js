@@ -8,30 +8,28 @@ import changelog from "../markdown/privacy.md"
 import Markdown from "../components/markdown-importer"
 
 const IndexPage = ({ data }) => (
-    <Layout>
-        <SEO title={configs.app_name} keywords={configs.app_keywords} />
+  <Layout>
+    <SEO title={configs.app_name} keywords={configs.app_keywords} />
 
-        <div
-            className="imageWrapper"
-            style={{
-                backgroundImage: `linear-gradient(${configs.cover_overlay_color_rgba},${
-                    configs.cover_overlay_color_rgba
-                    }),url(${data.headerImage.childImageSharp.fluid.src})`,
-                height: "114px",
-                borderRadius: "0"
-            }}
-        >
-            <div className="headerBackground" >
-                <div className="container presskitPage">
-                    <Header data={data} />
-                    <div className="markdown">
-                    <Markdown source = {changelog}/>
-                    </div>
-                    <Footer />
-                </div>
-            </div>
+    <div
+      className="imageWrapper"
+      style={{
+        backgroundImage: `linear-gradient(${configs.cover_overlay_color_rgba},${
+          configs.cover_overlay_color_rgba
+          }),url(${data.headerImage.childImageSharp.fluid.src})`,
+        height: "114px",
+        borderRadius: "0"
+      }}
+    >
+      <div className="headerBackground" >
+        <div className="container presskitPage">
+          <Header data={data} />
+          <Markdown source={changelog} />
+          <Footer />
         </div>
-    </Layout>
+      </div>
+    </div>
+  </Layout>
 )
 
 export default IndexPage
