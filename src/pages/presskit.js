@@ -52,6 +52,11 @@ const IndexPage = ({ data }) => (
                 <img src="/screenshots/app-store/light_logo_banner.png" />
               </a>
             </div>
+            <div className="presskit-banner">
+              <a href="/screenshots/app-store/light_phone_banner.png">
+                <img src="/screenshots/app-store/light_phone_banner.png" />
+              </a>
+            </div>
             <div className="presskit-iphone-screenshots">
               <div className="presskit-screenshot">
                   <a href="/screenshots/app-store/screenshot_iphone_01.png">

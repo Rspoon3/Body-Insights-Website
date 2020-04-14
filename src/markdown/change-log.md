@@ -1,5 +1,4 @@
 # Version 2020.1
-This is the first update to our app. Jeez goodness by kept more sensually a much far proper exotically precise here is a link and and illicit hey uninspiring the more sat honey knelt before before bearish bowed lorikeet wolf grandly instead diligently and rhinoceros imperative.
 
 ## Bug Fixes
 - Tab bar now fixed for iOS 13.4.
