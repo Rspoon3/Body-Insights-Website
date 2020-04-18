@@ -22,5 +22,5 @@ If Body Insights, or substantially all of its assets, were acquired user informa
 ​
 By using our site or apps, you consent to our privacy policy. 
 
-- **August 8, 2017:** First Published
+- **July 26, 2018:** First Published
 - **April 13, 2020:** New Privacy Policy
